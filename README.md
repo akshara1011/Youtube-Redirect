@@ -1,2 +1,3 @@
 # YoutubeRedirect
-This app or chrome extension helps us in redirecting to websites of our choice rather than Youtube as youtube is useful, but it can be never ending and distracting
+Developed a Chrome Extension that allows users to control and redirect specific websites for productivity enhancement. Implemented background scripts for event handling, options page for user preferences, and manifest configuration for permissions and extension setup. Used Chrome’s APIs to handle tab redirection dynamically.
+

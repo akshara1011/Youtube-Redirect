@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MindRoute Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      color: #222;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4a6cf7;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+    .section {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 8px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 8px 12px;
+      margin-left: 8px;
+      background-color: #4a6cf7;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3458d2;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+    li {
+      background: #eef2ff;
+      margin: 5px 0;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .delete-btn {
+      background: transparent;
+      color: #e74c3c;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚙️ MindRoute Settings</h1>
+
+  <div class="section">
+    <h2>🚫 Blocked Sites</h2>
+    <input id="blockedInput" type="text" placeholder="Add a site to block (e.g. youtube.com)" />
+    <button id="addBlocked">Add</button>
+    <ul id="blockedList"></ul>
+  </div>
+
+  <div class="section">
+    <h2>✅ Productive Sites</h2>
+    <input id="productiveInput" type="text" placeholder="Add a productive site (e.g. notion.so)" />
+    <button id="addProductive">Add</button>
+    <ul id="productiveList"></ul>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
